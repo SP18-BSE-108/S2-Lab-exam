@@ -8,7 +8,7 @@ block content
             a(href="/products/add" class="btn btn-success btn-sm float-right") Create Course
     table.table
         thead
-            tr
+            tr#abc
                 th Course Name
                 th Course ID
                 th Course Duration(Hrs) 
@@ -21,5 +21,5 @@ block content
                     td=product.duration
                     td=product.fee
                     td 
-                        a(href="/products/delete/"+product._id,class="btn btn-danger",style="margin-right:10px") Delete
-                        a(href="/products/update/"+product._id,class="btn btn-warning",style="margin-right:10px") Edit
+                        a(href="/products/delete/"+product._id,class="btn btn-primary",style="margin-right:10px") Delete
+                        a(href="/products/update/"+product._id,class="btn btn-primary",style="margin-right:10px") Edit
